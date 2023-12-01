@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer E-Commerce</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <section id="header">
+        <a href=""><img src="assets/icons/GearVN.png" alt="" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="auth.html">Login / Register</a></li>
+            </ul>   
+        </div>       
+    </section>
+
+
+    <div class="marquee-container">
+        <div class="marquee-content">
+            This is a scrolling announcement message. This is a scrolling announcement message. This is a scrolling announcement message.
+        </div>
+    </div>
+
+
+    <div id="slide-container" onmouseenter="stopAutoSlide()" onmouseleave="startAutoSlide()">
+        <div id="slides">
+            <!-- Add your image links here -->
+            <div class="slide"><img src="https://file.hstatic.net/200000722513/file/gearvn-dai-tiec-rog-san-qua-toi-tuf-slider_47335ea3529147b2a278a1975f2989b0.jpg" alt="Slide 1"></div>
+            <div class="slide"><img src="https://file.hstatic.net/200000722513/file/banner_slider_-_b1400ceae_bv3186w_96f4f72c2495460d89670c65f1e896b6.png" alt="Slide 2"></div>
+            <div class="slide"><img src="https://file.hstatic.net/200000722513/file/gearvn-nam-moi-phai-toi-asus-moi-mo-hanh-trinh-moi-bans_d946e3ce4d4f49db9392d51511120673.jpg" alt="Slide 3"></div>
+        </div>
+
+        <div class="controls">
+            <button class="control-btn" onclick="prevSlide()">Previous</button>
+            <button class="control-btn" onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+
+
+    <section id="product1" class="section-p1">
+        <h2>Trending products</h2>
+        <p>Discover the Exclusive Premium Gear Collection</p>
+        <div class="product-container"  >
+            <div class="product">
+                <div class="prod-card">
+                    <img class="img-object" src="../assets/products/vga1.webp" alt="product 1">
+                    <div class="description">
+                        <span>ASUS</span>
+                        <h3 class="title-object">ASUS ROG Matrix GeForce RTX 4090 Platinum 24GB GDDR6X</h3>
+                        <div class="star">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                        </div>
+                        <h4 class="price-object">4999,99$</h4>
+                    </div>     
+                </div>
+            </div>
+            <div class="product">
+                <div class="prod-card">
+                    <img class="img-object" src="../assets/products/vga2.webp" alt="product 2">
+                    <div class="description">
+                        <span>MSI</span>
+                        <h3 class="title-object">MSI GeForce RTX 4090 SUPRIM LIQUID 24G</h3>
+                        <div class="star">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                        </div>
+                        <h4 class="price-object">3999,99$</h4>
+                    </div>
+                </div>   
+            </div>
+            <div class="product">
+                <div class="prod-card">
+                    <img class="img-object" src="../assets/products/vga3.webp" alt="product 3">
+                    <div class="description">
+                        <span>GIGABYTE AORUS</span>
+                        <h3 class="title-object">GIGABYTE AORUS GeForce RTX 4080 XTREME WB 16GB</h3>
+                        <div class="star">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                        </div>
+                        <h4 class="price-object">2000,00$</h4>
+                    </div>
+                </div>    
+            </div>
+            <div class="product"> 
+                <div class="prod-card">
+                    <img class="img-object" src="../assets/products/vga4.webp" alt="product 4">
+                    <div class="description">
+                        <span>ASUS TUF</span>
+                        <h3 class="title-object">ASUS TUF Gaming GeForce RTX 4090 OC Edition 24GB</h3>
+                        <div class="star">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                        </div>
+                        <h4 class="price-object">1800,00$</h4>
+                    </div>
+                </div> 
+            </div>
+            <div class="product">
+                <div class="prod-card">
+                    <img class="img-object" src="../assets/products/lap1.webp" alt="product 5">
+                    <div class="description">
+                        <span>ASUS ROG</span>
+                        <h3 class="title-object">Laptop gaming ASUS ROG Flow Z13 GZ301VU MU301W</h3>
+                        <div class="star">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                        </div>
+                        <h4 class="price-object">2000,00$</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="prod-card">
+                    <img class="img-object" src="../assets/products/lap2.webp" alt="product 6">
+                     <div class="description">
+                        <span>ASUS ROG</span>
+                        <h3 class="title-object">Laptop gaming ASUS ROG Strix G16 G614JV N4261W</h3>
+                         <div class="star">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                        </div>
+                        <h4 class="price-object">1700,00$</h4>
+                    </div>
+                </div>   
+            </div>
+            <div class="product">
+                <div class="prod-card">
+                    <img class="img-object" src="../assets/products/lap3.png" alt="product 7">
+                    <div class="description">
+                        <span>Acer Nitro</span>
+                        <h3 class="title-object">Laptop gaming Acer Nitro 16 Phoenix AN16 41 R3SM</h3>
+                        <div class="star">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                        </div>
+                        <h4 class="price-object">1500,00$</h4>
+                    </div>
+                </div>  
+            </div>
+            <div class="product">
+                <div class="prod-card">
+                    <img class="img-object" src="../assets/products/lap4.png" alt="product 8">
+                    <div class="description">
+                        <span>Acer Predator</span>
+                        <h3 class="title-object">Laptop gaming Acer Predator Helios Neo 16 PHN16 71 53M7</h3>
+                        <div class="star">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                            <img src="../assets/icons/star-solid.png" alt="">
+                        </div>
+                        <h4 class="price-object">1500,00$</h4>
+                    </div>
+                </div>         
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="footer">
+        <div class="ft-container"> <!--container-->
+            <img src="assets/icons/GearVN.svg" alt="" class="logofooter">
+        </div>       
+    </section>
+    
+</body>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/slide.js"></script>
+</html>

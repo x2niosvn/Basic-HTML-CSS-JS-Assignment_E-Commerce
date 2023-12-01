@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Product</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <section id="header">
+        <a href="index.html"><img src="../assets/icons/GearVN.png" alt="" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="cart.html"><img src="../assets/icons/cart-shopping-solid.png" class="cart-icon" alt=""></a></li>
+                <li><a class="logout" href="../index.html">Logout</a></li>
+            </ul>   
+        </div>       
+    </section>
+
+     <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="../assets/products/vga1.webp" alt="" id="MainImg" width="100%">
+        </div>
+        <div class="single-pro-details">
+            <h4 id="prod-name">ASUS ROG Matrix GeForce RTX 4090 Platinum 24GB GDDR6X</h4>
+            <h2 id="price">4999,99$</h2>
+            <p id="prod-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, omnis saepe. Laboriosam a et sequi maiores dolorum numquam natus itaque. Laboriosam corporis itaque eos ullam perspiciatis quam animi, velit dolorem?</p>
+            <div id="sel-input-row">
+                <input type="number" value="1">
+            </div>
+            <button class="botao" onclick="window.location.href='cart.html'">Add to Cart</button>
+        </div>
+      </section>
+        
+
+
+      <section id="footer">
+        <div class="ft-container"> <!--container-->
+            <img src="../assets/icons/GearVN.svg" alt="" class="logofooter">
+        </div>       
+    </section>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+        
+        let myData = JSON.parse(localStorage.getItem('tenis'));
+        localStorage.clear();
+
+        let prodName = document.getElementById('prod-name');
+        let prodPrice = document.getElementById('price');
+        let prodImg = document.getElementById('MainImg');
+        let prodDesc = document.getElementById('prod-desc');
+
+        let priceFormat = myData.price;
+        priceFormat = priceFormat.toString().replace('.', ','). replace('', '$');
+
+        prodName.innerText = myData.title;
+        prodPrice.innerText = priceFormat;
+        prodImg.src = myData.img;
+        prodDesc.innerText = myData.desc;
+    
+     
+    </script>
+</body>
+</html>

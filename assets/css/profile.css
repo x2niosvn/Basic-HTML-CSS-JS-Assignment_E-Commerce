@@ -1,0 +1,50 @@
+.user-card {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.user-card {
+    background-color: #f3e2e2;
+    padding: 20px;
+}
+
+.user-profile {
+    text-align: center;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.full-name {
+    margin: 5px 0;
+    color: #333;
+}
+
+.username,
+.email {
+    color: #666;
+    margin: 5px 0;
+}
+
+.user-details {
+    margin-top: 20px;
+}
+
+.phone,
+.address {
+    margin: 5px 0;
+    color: #555;
+}
+
+

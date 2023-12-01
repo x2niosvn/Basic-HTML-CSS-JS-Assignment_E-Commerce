@@ -82,13 +82,13 @@ function updateTotal() {
     const cartProducts = document.getElementsByClassName('cart-product');
 
     for(let i = 0; i < cartProducts.length; i++) {
-        const productPrice = cartProducts[i].getElementsByClassName('cart-product-price')[0].innerText.replace('R$', '').replace(',', '.');
+        const productPrice = cartProducts[i].getElementsByClassName('cart-product-price')[0].innerText.replace('$', '').replace(',', '.');
         const productQuantity = cartProducts[i].getElementsByClassName('cart-product-quantity')[0].value;
 
         totalAmount += productPrice * productQuantity;
     }
     totalAmount = totalAmount.toFixed(2);
-    totalAmount = totalAmount.replace('', 'R$ ').replace('.', ',');
+    totalAmount = totalAmount.replace('', '$ ').replace('.', ',');
     document.getElementById('total-amount').innerText = totalAmount;
 }
 

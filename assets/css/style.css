@@ -53,7 +53,7 @@ body {
 }
 
 #header .logo {
-    width: 90px;
+    width: 150px;
     height: 90px;
     padding-left: 10px;
 }
@@ -271,7 +271,7 @@ body {
 
 #footer {
     padding: 30px 0;
-    background-color: #fc2600;
+    background-color: #f2d8d4;
     color:#000000
 }
 
